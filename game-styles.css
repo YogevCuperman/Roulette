@@ -1,0 +1,112 @@
+body {
+    background: darkgreen;
+}
+
+h1 {
+    color: goldenrod;
+    text-align: center;
+    font-size: 65px;
+    -webkit-text-stroke: 1px saddlebrown;
+}
+
+h2 {
+    color: goldenrod;
+    text-align: center;
+    font-size: 30px;
+    -webkit-text-stroke: 0.25px saddlebrown;
+}
+
+h3 {
+    color: goldenrod;
+    text-align: center;
+    font-size: 25px;
+    -webkit-text-stroke: 0.25px saddlebrown;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#alerts {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#number-rect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    width:100px;
+    height:100px;
+    background:gray;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
+}
+
+
+.roulette-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.roulette-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.roulette-cell {
+    box-sizing: border-box;
+    border: 1px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold;
+    width: 70px;
+    height: 70px;
+}
+
+.roulette-0-cell {
+    box-sizing: border-box;
+    border: 1px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold;
+    width: 70px;
+    height: 210px;
+}
+
+/* Example styles for red and black cells */
+
+.red-cell {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.black-cell {
+    background-color: black;
+    color: #fff;
+}
+
+/* Example styles for green cells */
+
+.green-cell {
+    background-color: green;
+    color: #fff;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yogever's Roulette</title>
+    <link href="game-styles.css" rel="stylesheet">
+    <script src="game-scripts.js" defer></script>
+</head>
+<body>
+    <h1 id="upper-title">Yogever's Roulette</h1>
+    <div id="numbers-table" class="container">
+        <div id="number-rect"></div>
+<!--        <h3>The next roll is in <span id="roll-timer">30</span> seconds...</h3>-->
+        <button id="roll-button" onclick="roll()">Roll</button>
+    </div>
+    <div class="container">
+        <h3 id="place-bets">Place your bets now:</h3>
+
+        <div class="roulette-table">
+            <div class="roulette-row">
+                <div class="roulette-cell roulette-0-cell green-cell" onclick="roll('yogev')">0</div>
+            </div>
+            <div class="roulette-row">
+                <div class="roulette-cell red-cell">3</div>
+                <div class="roulette-cell black-cell">2</div>
+                <div class="roulette-cell red-cell">1</div>
+            </div>
+            <div class="roulette-row">
+                <div class="roulette-cell black-cell">6</div>
+                <div class="roulette-cell red-cell">5</div>
+                <div class="roulette-cell black-cell">4</div>
+            </div>
+            <div class="roulette-row">
+                <div class="roulette-cell red-cell">9</div>
+                <div class="roulette-cell black-cell">8</div>
+                <div class="roulette-cell red-cell">7</div>
+            </div>
+            <div class="roulette-row">
+                <div class="roulette-cell red-cell">12</div>
+                <div class="roulette-cell black-cell">11</div>
+                <div class="roulette-cell black-cell">10</div>
+            </div>
+            <div class="roulette-row">
+                <div class="roulette-cell black-cell">15</div>
+                <div class="roulette-cell red-cell">14</div>
+                <div class="roulette-cell black-cell">13</div>
+            </div>
+            <div class="roulette-row">
+                <div class="roulette-cell red-cell">18</div>
+                <div class="roulette-cell black-cell">17</div>
+                <div class="roulette-cell red-cell">16</div>
+            </div>
+            <div class="roulette-row">
+                <div class="roulette-cell red-cell">21</div>
+                <div class="roulette-cell black-cell">20</div>
+                <div class="roulette-cell red-cell">19</div>
+            </div>
+            <div class="roulette-row">
+                <div class="roulette-cell black-cell">24</div>
+                <div class="roulette-cell red-cell">23</div>
+                <div class="roulette-cell black-cell">22</div>
+            </div>
+            <div class="roulette-row">
+                <div class="roulette-cell red-cell">27</div>
+                <div class="roulette-cell black-cell">26</div>
+                <div class="roulette-cell red-cell">25</div>
+            </div>
+            <div class="roulette-row">
+                <div class="roulette-cell red-cell">30</div>
+                <div class="roulette-cell black-cell">29</div>
+                <div class="roulette-cell black-cell">28</div>
+            </div>
+            <div class="roulette-row">
+                <div class="roulette-cell black-cell">33</div>
+                <div class="roulette-cell red-cell">32</div>
+                <div class="roulette-cell black-cell">31</div>
+            </div>
+            <div class="roulette-row">
+                <div class="roulette-cell red-cell">36</div>
+                <div class="roulette-cell black-cell">35</div>
+                <div class="roulette-cell red-cell">34</div>
+            </div>
+        </div>
+
+        <h3 id="number-picked"></h3>
+
+    </div>
+    <div id="alerts" class="container"></div>
+</body>
+</html>
