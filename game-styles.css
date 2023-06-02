@@ -1,5 +1,7 @@
 body {
     background: darkgreen;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+
 }
 
 h1 {
@@ -21,6 +23,34 @@ h3 {
     text-align: center;
     font-size: 25px;
     -webkit-text-stroke: 0.25px saddlebrown;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+#roll-button {
+    appearance: none;
+    background-color: #2ea44f;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 
 
@@ -65,6 +95,7 @@ h3 {
 .roulette-row {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .roulette-cell {
@@ -144,3 +175,78 @@ h3 {
 .thirds-intersection {
     width: 85px
 }
+
+.partial-cell {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.right-upper-quarter-cell {
+    top: 60px;
+    left: 60px;
+}
+
+.left-upper-quarter-cell {
+    top: 60px;
+    right: 60px;
+}
+
+.right-lower-quarter-cell {
+    top: 130px;
+    left: 60px;
+}
+
+.left-lower-quarter-cell {
+    top: 130px;
+    right: 60px;
+}
+
+.right-upper-half-cell {
+    top: 30px;
+    left: 60px;
+    background-color: gold;
+}
+
+.left-upper-half-cell {
+    top: 30px;
+    right: 60px;
+    background-color: gold;
+}
+
+.right-center-half-cell {
+    top: 95px;
+    left: 60px;
+    background-color: gold;
+}
+
+.left-center-half-cell {
+    top: 95px;
+    right: 60px;
+    background-color: gold;
+}
+
+.right-lower-half-cell {
+    top: 165px;
+    left: 60px;
+    background-color: gold;
+}
+
+.left-lower-half-cell {
+    top: 165px;
+    right: 60px;
+    background-color: gold;
+}
+
+.top-half-cell {
+    top: 60px;
+    left: 25px;
+    background-color: gold;
+}
+
+.bot-half-cell {
+    top: 130px;
+    left: 25px;
+    background-color: gold;
+}
+

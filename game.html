@@ -10,74 +10,244 @@
     <h1 id="upper-title">Roulette</h1>
     <div id="numbers-table" class="container">
         <div id="number-rect"></div>
-        <button id="roll-button" onclick="roll()">Roll</button>
+        <button id="roll-button" class="clickable" onclick="roll()">Roll</button>
     </div>
     <div class="container">
         <h3 id="place-bets">Place your bets:</h3>
 
-        <div class="roulette-table">
+        <div class="roulette-table clickable">
             <div class="roulette-row">
                 <div class="roulette-cell roulette-0-cell green-cell">0</div>
+
+                <div class="partial-cell right-upper-half-cell h-0-3"></div>
+                <div class="partial-cell right-center-half-cell h-0-2"></div>
+                <div class="partial-cell right-lower-half-cell h-0-1"></div>
+
+                <div class="partial-cell right-upper-quarter-cell q-0-2-3"></div>
+                <div class="partial-cell right-lower-quarter-cell q-0-1-2"></div>
             </div>
             <div class="roulette-row">
                 <div class="roulette-cell red-cell">3</div>
                 <div class="roulette-cell black-cell">2</div>
                 <div class="roulette-cell red-cell">1</div>
+
+                <div class="partial-cell left-upper-half-cell h-0-3"></div>
+                <div class="partial-cell left-center-half-cell h-0-2"></div>
+                <div class="partial-cell left-lower-half-cell h-0-1"></div>
+                <div class="partial-cell right-upper-half-cell h-3-6"></div>
+                <div class="partial-cell right-center-half-cell h-2-5"></div>
+                <div class="partial-cell right-lower-half-cell h-1-4"></div>
+                <div class="partial-cell top-half-cell h-2-3"></div>
+                <div class="partial-cell bot-half-cell h-1-2"></div>
+
+                <div class="partial-cell left-upper-quarter-cell q-0-2-3"></div>
+                <div class="partial-cell left-lower-quarter-cell q-0-1-2"></div>
+                <div class="partial-cell right-upper-quarter-cell q-3-5"></div>
+                <div class="partial-cell right-lower-quarter-cell q-2-4"></div>
             </div>
             <div class="roulette-row">
                 <div class="roulette-cell black-cell">6</div>
                 <div class="roulette-cell red-cell">5</div>
                 <div class="roulette-cell black-cell">4</div>
+
+                <div class="partial-cell left-upper-half-cell h-3-6"></div>
+                <div class="partial-cell left-center-half-cell h-2-5"></div>
+                <div class="partial-cell left-lower-half-cell h-1-4"></div>
+                <div class="partial-cell right-upper-half-cell h-6-9"></div>
+                <div class="partial-cell right-center-half-cell h-5-8"></div>
+                <div class="partial-cell right-lower-half-cell h-4-7"></div>
+                <div class="partial-cell top-half-cell h-5-6"></div>
+                <div class="partial-cell bot-half-cell h-4-5"></div>
+
+                <div class="partial-cell left-upper-quarter-cell q-3-5"></div>
+                <div class="partial-cell left-lower-quarter-cell q-2-4"></div>
+                <div class="partial-cell right-upper-quarter-cell q-6-8"></div>
+                <div class="partial-cell right-lower-quarter-cell q-5-7"></div>
             </div>
             <div class="roulette-row">
                 <div class="roulette-cell red-cell">9</div>
                 <div class="roulette-cell black-cell">8</div>
                 <div class="roulette-cell red-cell">7</div>
+
+                <div class="partial-cell left-upper-half-cell h-6-9"></div>
+                <div class="partial-cell left-center-half-cell h-5-8"></div>
+                <div class="partial-cell left-lower-half-cell h-4-7"></div>
+                <div class="partial-cell right-upper-half-cell h-9-12"></div>
+                <div class="partial-cell right-center-half-cell h-8-11"></div>
+                <div class="partial-cell right-lower-half-cell h-7-10"></div>
+                <div class="partial-cell top-half-cell h-8-9"></div>
+                <div class="partial-cell bot-half-cell h-7-8"></div>
+
+                <div class="partial-cell left-upper-quarter-cell q-6-8"></div>
+                <div class="partial-cell left-lower-quarter-cell q-5-7"></div>
+                <div class="partial-cell right-upper-quarter-cell q-9-11"></div>
+                <div class="partial-cell right-lower-quarter-cell q-8-10"></div>
             </div>
             <div class="roulette-row">
                 <div class="roulette-cell red-cell">12</div>
                 <div class="roulette-cell black-cell">11</div>
                 <div class="roulette-cell black-cell">10</div>
+
+                <div class="partial-cell left-upper-half-cell h-9-12"></div>
+                <div class="partial-cell left-center-half-cell h-8-11"></div>
+                <div class="partial-cell left-lower-half-cell h-7-10"></div>
+                <div class="partial-cell right-upper-half-cell h-12-15"></div>
+                <div class="partial-cell right-center-half-cell h-11-14"></div>
+                <div class="partial-cell right-lower-half-cell h-10-13"></div>
+                <div class="partial-cell top-half-cell h-11-12"></div>
+                <div class="partial-cell bot-half-cell h-10-11"></div>
+
+                <div class="partial-cell left-upper-quarter-cell q-9-11"></div>
+                <div class="partial-cell left-lower-quarter-cell q-8-10"></div>
+                <div class="partial-cell right-upper-quarter-cell q-12-14"></div>
+                <div class="partial-cell right-lower-quarter-cell q-11-13"></div>
             </div>
             <div class="roulette-row">
                 <div class="roulette-cell black-cell">15</div>
                 <div class="roulette-cell red-cell">14</div>
                 <div class="roulette-cell black-cell">13</div>
+
+                <div class="partial-cell left-upper-half-cell h-12-15"></div>
+                <div class="partial-cell left-center-half-cell h-11-14"></div>
+                <div class="partial-cell left-lower-half-cell h-10-13"></div>
+                <div class="partial-cell right-upper-half-cell h-15-18"></div>
+                <div class="partial-cell right-center-half-cell h-14-17"></div>
+                <div class="partial-cell right-lower-half-cell h-13-16"></div>
+                <div class="partial-cell top-half-cell h-14-15"></div>
+                <div class="partial-cell bot-half-cell h-13-14"></div>
+
+                <div class="partial-cell left-upper-quarter-cell q-12-14"></div>
+                <div class="partial-cell left-lower-quarter-cell q-11-13"></div>
+                <div class="partial-cell right-upper-quarter-cell q-15-17"></div>
+                <div class="partial-cell right-lower-quarter-cell q-14-16"></div>
             </div>
             <div class="roulette-row">
                 <div class="roulette-cell red-cell">18</div>
                 <div class="roulette-cell black-cell">17</div>
                 <div class="roulette-cell red-cell">16</div>
+
+                <div class="partial-cell left-upper-half-cell h-15-18"></div>
+                <div class="partial-cell left-center-half-cell h-14-17"></div>
+                <div class="partial-cell left-lower-half-cell h-13-16"></div>
+                <div class="partial-cell right-upper-half-cell h-18-21"></div>
+                <div class="partial-cell right-center-half-cell h-17-20"></div>
+                <div class="partial-cell right-lower-half-cell h-16-19"></div>
+                <div class="partial-cell top-half-cell h-17-18"></div>
+                <div class="partial-cell bot-half-cell h-16-17"></div>
+
+                <div class="partial-cell left-upper-quarter-cell q-15-17"></div>
+                <div class="partial-cell left-lower-quarter-cell q-14-16"></div>
+                <div class="partial-cell right-upper-quarter-cell q-18-20"></div>
+                <div class="partial-cell right-lower-quarter-cell q-17-19"></div>
             </div>
             <div class="roulette-row">
                 <div class="roulette-cell red-cell">21</div>
                 <div class="roulette-cell black-cell">20</div>
                 <div class="roulette-cell red-cell">19</div>
+
+                <div class="partial-cell left-upper-half-cell h-18-21"></div>
+                <div class="partial-cell left-center-half-cell h-17-20"></div>
+                <div class="partial-cell left-lower-half-cell h-16-19"></div>
+                <div class="partial-cell right-upper-half-cell h-21-24"></div>
+                <div class="partial-cell right-center-half-cell h-20-23"></div>
+                <div class="partial-cell right-lower-half-cell h-19-22"></div>
+                <div class="partial-cell top-half-cell h-20-21"></div>
+                <div class="partial-cell bot-half-cell h-19-20"></div>
+
+                <div class="partial-cell left-upper-quarter-cell q-18-20"></div>
+                <div class="partial-cell left-lower-quarter-cell q-17-19"></div>
+                <div class="partial-cell right-upper-quarter-cell q-21-23"></div>
+                <div class="partial-cell right-lower-quarter-cell q-20-22"></div>
             </div>
             <div class="roulette-row">
                 <div class="roulette-cell black-cell">24</div>
                 <div class="roulette-cell red-cell">23</div>
                 <div class="roulette-cell black-cell">22</div>
+
+                <div class="partial-cell left-upper-half-cell h-21-24"></div>
+                <div class="partial-cell left-center-half-cell h-20-23"></div>
+                <div class="partial-cell left-lower-half-cell h-19-22"></div>
+                <div class="partial-cell right-upper-half-cell h-24-27"></div>
+                <div class="partial-cell right-center-half-cell h-23-26"></div>
+                <div class="partial-cell right-lower-half-cell h-22-25"></div>
+                <div class="partial-cell top-half-cell h-23-24"></div>
+                <div class="partial-cell bot-half-cell h-22-23"></div>
+
+                <div class="partial-cell left-upper-quarter-cell q-21-23"></div>
+                <div class="partial-cell left-lower-quarter-cell q-20-22"></div>
+                <div class="partial-cell right-upper-quarter-cell q-24-26"></div>
+                <div class="partial-cell right-lower-quarter-cell q-23-25"></div>
             </div>
             <div class="roulette-row">
                 <div class="roulette-cell red-cell">27</div>
                 <div class="roulette-cell black-cell">26</div>
                 <div class="roulette-cell red-cell">25</div>
+
+                <div class="partial-cell left-upper-half-cell h-24-27"></div>
+                <div class="partial-cell left-center-half-cell h-23-26"></div>
+                <div class="partial-cell left-lower-half-cell h-22-25"></div>
+                <div class="partial-cell right-upper-half-cell h-27-30"></div>
+                <div class="partial-cell right-center-half-cell h-26-29"></div>
+                <div class="partial-cell right-lower-half-cell h-25-28"></div>
+                <div class="partial-cell top-half-cell h-26-27"></div>
+                <div class="partial-cell bot-half-cell h-25-26"></div>
+
+                <div class="partial-cell left-upper-quarter-cell q-24-26"></div>
+                <div class="partial-cell left-lower-quarter-cell q-23-25"></div>
+                <div class="partial-cell right-upper-quarter-cell q-27-29"></div>
+                <div class="partial-cell right-lower-quarter-cell q-26-28"></div>
             </div>
             <div class="roulette-row">
                 <div class="roulette-cell red-cell">30</div>
                 <div class="roulette-cell black-cell">29</div>
                 <div class="roulette-cell black-cell">28</div>
+
+                <div class="partial-cell left-upper-half-cell h-27-30"></div>
+                <div class="partial-cell left-center-half-cell h-26-29"></div>
+                <div class="partial-cell left-lower-half-cell h-25-28"></div>
+                <div class="partial-cell right-upper-half-cell h-30-33"></div>
+                <div class="partial-cell right-center-half-cell h-29-32"></div>
+                <div class="partial-cell right-lower-half-cell h-28-31"></div>
+                <div class="partial-cell top-half-cell h-29-30"></div>
+                <div class="partial-cell bot-half-cell h-28-29"></div>
+
+                <div class="partial-cell left-upper-quarter-cell q-27-29"></div>
+                <div class="partial-cell left-lower-quarter-cell q-26-28"></div>
+                <div class="partial-cell right-upper-quarter-cell q-30-32"></div>
+                <div class="partial-cell right-lower-quarter-cell q-29-31"></div>
             </div>
             <div class="roulette-row">
                 <div class="roulette-cell black-cell">33</div>
                 <div class="roulette-cell red-cell">32</div>
                 <div class="roulette-cell black-cell">31</div>
+
+                <div class="partial-cell left-upper-half-cell h-30-33"></div>
+                <div class="partial-cell left-center-half-cell h-29-32"></div>
+                <div class="partial-cell left-lower-half-cell h-28-31"></div>
+                <div class="partial-cell right-upper-half-cell h-33-36"></div>
+                <div class="partial-cell right-center-half-cell h-32-35"></div>
+                <div class="partial-cell right-lower-half-cell h-31-34"></div>
+                <div class="partial-cell top-half-cell h-32-33"></div>
+                <div class="partial-cell bot-half-cell h-31-32"></div>
+
+                <div class="partial-cell left-upper-quarter-cell q-30-32"></div>
+                <div class="partial-cell left-lower-quarter-cell q-29-31"></div>
+                <div class="partial-cell right-upper-quarter-cell q-33-35"></div>
+                <div class="partial-cell right-lower-quarter-cell q-32-34"></div>
             </div>
             <div class="roulette-row">
                 <div class="roulette-cell red-cell">36</div>
                 <div class="roulette-cell black-cell">35</div>
                 <div class="roulette-cell red-cell">34</div>
+
+                <div class="partial-cell left-upper-half-cell h-33-36"></div>
+                <div class="partial-cell left-center-half-cell h-32-35"></div>
+                <div class="partial-cell left-lower-half-cell h-31-34"></div>
+                <div class="partial-cell top-half-cell h-35-36"></div>
+                <div class="partial-cell bot-half-cell h-34-35"></div>
+
+                <div class="partial-cell left-upper-quarter-cell q-33-35"></div>
+                <div class="partial-cell left-lower-quarter-cell q-32-34"></div>
             </div>
             <div class="roulette-row>">
                 <div class="columns-third">2 to 1</div>
@@ -86,7 +256,7 @@
             </div>
         </div>
 
-        <div class="roulette-sections">
+        <div class="roulette-sections clickable">
             <div class="sections-row">
                 <div class="blank-cell"></div>
                 <div class="rows-third">1st 12</div>
