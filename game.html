@@ -2,23 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Yogever's Roulette</title>
+    <title>Roulette</title>
     <link href="game-styles.css" rel="stylesheet">
     <script src="game-scripts.js" defer></script>
 </head>
 <body>
-    <h1 id="upper-title">Yogever's Roulette</h1>
+    <h1 id="upper-title">Roulette</h1>
     <div id="numbers-table" class="container">
         <div id="number-rect"></div>
-<!--        <h3>The next roll is in <span id="roll-timer">30</span> seconds...</h3>-->
         <button id="roll-button" onclick="roll()">Roll</button>
     </div>
     <div class="container">
-        <h3 id="place-bets">Place your bets now:</h3>
+        <h3 id="place-bets">Place your bets:</h3>
 
         <div class="roulette-table">
             <div class="roulette-row">
-                <div class="roulette-cell roulette-0-cell green-cell" onclick="roll('yogev')">0</div>
+                <div class="roulette-cell roulette-0-cell green-cell">0</div>
             </div>
             <div class="roulette-row">
                 <div class="roulette-cell red-cell">3</div>
@@ -79,6 +78,31 @@
                 <div class="roulette-cell red-cell">36</div>
                 <div class="roulette-cell black-cell">35</div>
                 <div class="roulette-cell red-cell">34</div>
+            </div>
+            <div class="roulette-row>">
+                <div class="columns-third">2 to 1</div>
+                <div class="columns-third">2 to 1</div>
+                <div class="columns-third">2 to 1</div>
+            </div>
+        </div>
+
+        <div class="roulette-sections">
+            <div class="sections-row">
+                <div class="blank-cell"></div>
+                <div class="rows-third">1st 12</div>
+                <div class="rows-third">2nd 12</div>
+                <div class="rows-third">3rd 12</div>
+                <div class="blank-cell thirds-intersection"></div>
+            </div>
+            <div class="sections-row">
+                <div class="blank-cell"></div>
+                <div id="1to18" class="rows-half">1 to 18</div>
+                <div id="even" class="rows-half">EVEN</div>
+                <div id="red"class="rows-half red-cell"></div>
+                <div id="black" class="rows-half black-cell"></div>
+                <div id="odd" class="rows-half">ODD</div>
+                <div id="19to36" class="rows-half">19 to 36</div>
+                <div class="blank-cell thirds-intersection"></div>
             </div>
         </div>
 

@@ -52,10 +52,13 @@ h3 {
 }
 
 
-.roulette-table {
+.roulette-table, .sections-row {
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.roulette-sections {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -79,6 +82,10 @@ h3 {
 }
 
 .roulette-0-cell {
+    height: 210px;
+}
+.rows-third, .columns-third {
+    color: whitesmoke;
     box-sizing: border-box;
     border: 1px solid whitesmoke;
     display: flex;
@@ -88,11 +95,28 @@ h3 {
     vertical-align: middle;
     font-size: 20px;
     font-weight: bold;
-    width: 70px;
-    height: 210px;
+    width: 280px;
+    height: 70px;
 }
 
-/* Example styles for red and black cells */
+.rows-half {
+    color: whitesmoke;
+    box-sizing: border-box;
+    border: 1px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold;
+    width: 140px;
+    height: 70px;
+}
+
+.columns-third {
+    width: 85px;
+}
 
 .red-cell {
     background-color: #ff0000;
@@ -104,9 +128,19 @@ h3 {
     color: #fff;
 }
 
-/* Example styles for green cells */
 
 .green-cell {
     background-color: green;
     color: #fff;
+}
+
+.blank-cell {
+    box-sizing: border-box;
+    display: flex;
+    width: 70px;
+    height: 70px;
+}
+
+.thirds-intersection {
+    width: 85px
 }
