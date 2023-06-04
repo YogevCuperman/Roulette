@@ -53,7 +53,6 @@ h3 {
     white-space: nowrap;
 }
 
-
 .container {
     display: flex;
     flex-direction: column;
@@ -81,16 +80,15 @@ h3 {
     border: 3px solid whitesmoke;
 }
 
-
 .roulette-table, .sections-row {
     display: flex;
+    position: relative;
 }
 
 .roulette-sections {
     display: flex;
     flex-direction: column;
 }
-
 
 .roulette-row {
     display: flex;
@@ -115,6 +113,7 @@ h3 {
 .roulette-0-cell {
     height: 210px;
 }
+
 .rows-third, .columns-third {
     color: whitesmoke;
     box-sizing: border-box;
@@ -158,7 +157,6 @@ h3 {
     background-color: black;
     color: #fff;
 }
-
 
 .green-cell {
     background-color: green;
@@ -205,48 +203,143 @@ h3 {
 .right-upper-half-cell {
     top: 30px;
     left: 60px;
-    background-color: gold;
 }
 
 .left-upper-half-cell {
     top: 30px;
     right: 60px;
-    background-color: gold;
 }
 
 .right-center-half-cell {
     top: 95px;
     left: 60px;
-    background-color: gold;
 }
 
 .left-center-half-cell {
     top: 95px;
     right: 60px;
-    background-color: gold;
 }
 
 .right-lower-half-cell {
     top: 165px;
     left: 60px;
-    background-color: gold;
 }
 
 .left-lower-half-cell {
     top: 165px;
     right: 60px;
-    background-color: gold;
 }
 
 .top-half-cell {
     top: 60px;
     left: 25px;
-    background-color: gold;
 }
 
 .bot-half-cell {
     top: 130px;
     left: 25px;
-    background-color: gold;
 }
+
+.entire-row, .entire-drow {
+    top: -10px;
+}
+
+#row-1 {
+    left: 95px;
+}
+
+#row-4 {
+    left: 165px;
+}
+
+#row-7 {
+    left: 235px;
+}
+
+#row-10 {
+    left: 305px;
+}
+
+#row-13 {
+    left: 375px;
+}
+
+#row-16 {
+    left: 445px;
+}
+
+#row-19 {
+    left: 515px;
+}
+
+#row-22 {
+    left: 585px;
+}
+
+#row-25 {
+    left: 655px;
+}
+
+#row-28 {
+    left: 725px;
+}
+
+#row-31 {
+    left: 795px;
+}
+
+#row-34 {
+    left: 865px;
+}
+
+#drow-0-1 {
+    left: 60px;
+}
+
+#drow-1-4 {
+    left: 130px;
+}
+
+#drow-4-7 {
+    left: 200px;
+}
+
+#drow-7-10 {
+    left: 270px;
+}
+
+#drow-10-13 {
+    left: 340px;
+}
+
+#drow-13-16 {
+    left: 410px;
+}
+
+#drow-16-19 {
+    left: 480px;
+}
+
+#drow-19-22 {
+    left: 550px;
+}
+
+#drow-22-25 {
+    left: 620px;
+}
+
+#drow-25-28 {
+    left: 690px;
+}
+
+#drow-28-31 {
+    left: 760px;
+}
+
+#drow-31-34 {
+    left: 830px;
+}
+
+
+
 
