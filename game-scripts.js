@@ -12,7 +12,9 @@ const reds = [1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36]
 const blacks = [2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35]
 
 let chosenNumber = null
-let pickedNumber = null
+// let pickedNumber = null
+let currentAmount = 100
+let bets = []
 let running = false
 
 
@@ -20,7 +22,7 @@ let running = false
 /* FUNCTIONS */
 
 function roll() {
-    if (pickedNumber !== null) {
+    if (bets.length > 0) {
         clearAlert()
         running = true
         rollButton.disabled = true
@@ -30,7 +32,7 @@ function roll() {
             rollButton.disabled = false
             chosenNumber = parseInt(numberDisplay.textContent)
             running = false
-            window.alert("The number is: " + chosenNumber + "\nYou picked: " + pickedNumber)
+            window.alert("The number is: " + chosenNumber + "\nYou picked: " + bets)
         }, 10000)
     } else {
         alerts.textContent = "You need to pick a number before rolling"
@@ -54,13 +56,18 @@ function runNumbers() {
     }
 }
 
+function addBet(kind, amount) {
+    let bet = [kind, amount]
+    bets.push(bet)
+}
+
 function setEventsForNumbers() {
     for (let i = 0; i < numbers.length; i++) {
         let n = numbers[i].textContent
         numbers[i].addEventListener("click", function() {
             if (running === false) {
                 text.textContent = 'You picked: ' + n
-                pickedNumber = n
+                addBet(n, currentAmount)
             }
         })
     }
@@ -72,7 +79,7 @@ function setPickEventForEntireClass(className) {
         elements[i].addEventListener("click", function() {
             if (running === false) {
                 text.textContent = 'You picked: ' + className
-                pickedNumber = className
+                addBet(className, currentAmount)
             }
         })
     }
@@ -83,7 +90,7 @@ function setPickEventForID(id) {
     element.addEventListener("click", function() {
         if (running === false) {
             text.textContent = 'You picked: ' + id
-            pickedNumber = id
+            addBet(id, currentAmount)
         }
     })
 }
@@ -132,14 +139,14 @@ function setEventsForThirds() {
         columnsThirds[i].addEventListener("click", function() {
             if (running === false) {
                 if (i === 0) {
-                    text.textContent = 'You picked: Right Column'
-                    pickedNumber = 'rightColumn'
+                    text.textContent = 'You picked: rightColumn'
+                    addBet('rightColumn', currentAmount)
                 } else if (i === 1) {
-                    text.textContent = 'You picked: Center Column'
-                    pickedNumber = 'centerColumn'
+                    text.textContent = 'You picked: centerColumn'
+                    addBet('rightColumn', currentAmount)
                 } else {
-                    text.textContent = 'You picked: Left Column'
-                    pickedNumber = 'leftColumn'
+                    text.textContent = 'You picked: leftColumn'
+                    addBet('centerColumn', currentAmount)
                 }
             }
         })
@@ -150,14 +157,14 @@ function setEventsForThirds() {
         rowsThirds[i].addEventListener("click", function() {
             if (running === false) {
                 if (i === 0) {
-                    text.textContent = 'You picked: 1st 12'
-                    pickedNumber = '1st12'
+                    text.textContent = 'You picked: 1st12'
+                    addBet('1st12', currentAmount)
                 } else if (i === 1) {
-                    text.textContent = 'You picked: 2nd 12'
-                    pickedNumber = '2nd12'
+                    text.textContent = 'You picked: 2nd12'
+                    addBet('2nd12', currentAmount)
                 } else {
-                    text.textContent = 'You picked: 3rd 12'
-                    pickedNumber = '3rd12'
+                    text.textContent = 'You picked: 3rd12'
+                    addBet('3rd12', currentAmount)
                 }
             }
         })
